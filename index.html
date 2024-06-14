@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>storyStick</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Story Stick</h1>
+
+<div id ="inputId">
+</br>
+tile width in inches: <input  id="widthId" type="number"></input>
+<br/>
+fraction:<input id="fractionId" type="text"></input>
+
+
+</div>
+<div id="storyStickId">
+<p>How many tiles do you want on your story stick?</p> <input id="numberOfTilesId" type ="number"></input>
+<p>Select a grout joint size</p>
+<select id="groutJointId"> 
+<option value=0>1/64"</option>
+<option value=1>1/32"</option>
+<option value=2>1/16"</option>
+<option value=3>1/8"</option>
+<option value=4>3/16"</option>
+<option value=5>1/4"</option>
+<option value=6>3/8"</option>
+<option value=7>1/2"</option>
+</select>
+
+<input type="button" value="Submit" onclick="fracToDec(),storyStick()"></input>
+
+
+</div>
+<div id="storyStickDisplayId"></div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
